@@ -1,0 +1,219 @@
+/* prettier-ignore */
+a,a:hover,a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
+}
+
+header {
+  padding-bottom: 10px;
+}
+
+.header_container {
+  margin: 15px auto 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 94px;
+  height: 22px;
+}
+
+.header_right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header_right .search_icon {
+  fill: #65717b;
+}
+
+header .login {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Inter, "system-ui", Arial, sans-serif;
+  background-color: #3ea8ff;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+main {
+  background-color: #edf2f7;
+  display: block;
+}
+
+main header {
+  text-align: center;
+  padding: 60px 0 64px 0;
+}
+
+main .title_icon {
+  font-size: 75px;
+  line-height: 83px;
+  display: block;
+  padding-bottom: 19px;
+}
+
+main header h2 {
+  font-size: 31px;
+  line-height: 46px;
+  color: rgba(0, 0, 0, 0.82);
+  margin-bottom: 21px;
+}
+
+.update_icon {
+  width: 30px;
+}
+
+.date {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #65717b;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.05em;
+}
+
+.update_date {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.update_date svg {
+  fill: #65717b;
+}
+
+.main_contents {
+  display: grid;
+  grid-template-columns: 1fr 80px 3fr 1fr 1fr;
+}
+
+.aside_left {
+  grid-column: 2;
+}
+
+.good {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.good_btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.good_btn svg {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.good_btn .good_icon {
+  fill: transparent;
+  stroke: #8f9faa;
+  stroke-width: 3;
+}
+
+.good span {
+  font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    sans-serif, "Segoe UI Emoji";
+  font-size: 12px;
+  line-height: 22px;
+  color: #8f9faa;
+}
+
+.SNS {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.SNS_icon {
+  color: #8f9faa;
+}
+
+.aside-right {
+  grid-column: 4;
+}
+
+.aside-right article {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.official_info figure {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 15px;
+}
+
+.official_info figure img {
+  grid-row: 1 / 3;
+  width: 60px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.official_info figure p {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.follow_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.follow_btn a {
+  font-size: 13px;
+  color: #65717b;
+  padding: 7px 10px;
+  border: 1px solid #65717b;
+  border-radius: 20px;
+}
+
+.aside-right p {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.outline {
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.outline h2 {
+  line-height: 29px;
+  letter-spacing: 1.2px;
+}
+
+.outline li {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  margin-left: 20px;
+}
