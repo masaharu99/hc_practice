@@ -1,3 +1,4 @@
+/* PC画面の設定 */
 /* prettier-ignore */
 a,a:hover,a:visited {
   color: inherit;
@@ -8,6 +9,7 @@ body {
   font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
 }
 
+/* ヘッダーの設定 */
 header {
   padding-bottom: 10px;
 }
@@ -51,6 +53,7 @@ main {
   display: block;
 }
 
+/* メイン　タイトルの設定 */
 main header {
   text-align: center;
   padding: 60px 0 64px 0;
@@ -99,8 +102,10 @@ main header h2 {
 .main_contents {
   display: grid;
   grid-template-columns: 1fr 80px 3fr 1fr 1fr;
+  gap: 30px;
 }
 
+/* サイドバー（左）の設定 */
 .aside_left {
   grid-column: 2;
 }
@@ -150,11 +155,12 @@ main header h2 {
   color: #8f9faa;
 }
 
+/* サイドバー（右）の設定 */
 .aside-right {
   grid-column: 4;
 }
 
-.aside-right article {
+.official_info {
   box-sizing: border-box;
   width: 300px;
   background-color: #fff;
@@ -202,7 +208,14 @@ main header h2 {
 }
 
 .outline {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px 20px 50px 20px;
   color: rgba(0, 0, 0, 0.82);
+  background-color: #fff;
+  border-radius: 10px;
+  /* test */
+  margin-bottom: 30px;
 }
 
 .outline h2 {
@@ -211,9 +224,39 @@ main header h2 {
 }
 
 .outline li {
+  position: relative;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0.05em;
   margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.outline li::marker {
+  color: #3ea8ff;
+  font-size: 22px;
+}
+
+.outline li::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #3ea8ff;
+  opacity: 0.3;
+  position: absolute;
+  top: 16px;
+  left: -19px;
+}
+
+.outline li a {
+  position: absolute;
+  top: -0.8px;
+}
+
+.outline .no_selected {
+  font-weight: 400;
+  color: #65717b;
+  opacity: 0.5;
 }
