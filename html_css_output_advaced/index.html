@@ -40,6 +40,10 @@
         <!-- prettier-ignore -->
         <path fill="currentColor" d="M13.4,1.2C7,1,1.8,6,1.7,12.4c0,0.1,0,0.4,0,0.5c0,5.1,3.2,9.8,8.2,11.5c0.6,0.1,0.7-0.2,0.7-0.6s0-1.8,0-2.9 c0,0-3.3,0.6-4-1.5c0,0-0.6-1.3-1.3-1.8c0,0-1.1-0.7,0.1-0.7c0.7,0.1,1.5,0.6,1.8,1.2c0.6,1.2,2.2,1.7,3.4,1h0.1 c0.1-0.6,0.4-1.2,0.7-1.6C8.7,17.1,6,16.9,6,12.3c0-1.1,0.5-2.1,1.2-2.8c0-1.1,0-2.2,0.3-3.2c1-0.4,3.3,1.3,3.3,1.3c2-0.6,4-0.6,6,0 c0,0,2.2-1.6,3.2-1.2c0.5,1,0.5,2.2,0.1,3.2c0.7,0.7,1.2,1.8,1.2,2.8c0,4.5-2.8,5-5.5,5.2c0.6,0.6,0.9,1.3,0.7,2.2c0,1.7,0,3.5,0,4 s0.2,0.6,0.7,0.6c4.9-1.7,8.2-6.2,8-11.5c0.1-6.4-5.1-11.6-11.6-11.6C13.5,1.2,13.4,1.2,13.4,1.2z"></path>
       </symbol>
+      <symbol id="other_icon" viewBox="0 0 27 27">
+        <!-- prettier-ignore -->
+        <path fill="currentColor" d="M12.74,20.53,3.48,11.35a.75.75,0,0,1,0-1.07L4.71,9.05a.75.75,0,0,1,1.07,0l7.49,7.41,7.49-7.41a.74.74,0,0,1,1.06,0l1.24,1.23a.77.77,0,0,1,0,1.07L13.8,20.53A.74.74,0,0,1,12.74,20.53Z"></path>
+      </symbol>
     </svg>
 
     <header>
@@ -102,15 +106,13 @@
           </div>
         </aside>
 
-        <article></article>
-
         <aside class="aside-right">
           <article class="official_info">
             <figure>
               <img src="images/zenn.jpeg" alt="Zennの公式アカウント" />
               <p>Zenn公式</p>
-              <div class="follow_btn">
-                <a href="#">フォロー</a>
+              <div class="follow_items">
+                <a class="follow_btn" href="#">フォロー</a>
                 <svg style="width: 21px; height: 21px">
                   <use class="github_icon SNS_icon" href="#github_icon" />
                 </svg>
@@ -130,6 +132,129 @@
             </ul>
           </article>
         </aside>
+
+        <article class="container">
+          <div class="zenn_and_idea">
+            <a href="#">
+              <img class="zenn_icon" src="images/zenn_icon.png" alt="Zennの記事一覧" />
+              <span>Zenn</span>
+            </a>
+            <a href="#">
+              <img src="svg/idea_icon.svg" alt="Ideaのアイコン" />
+              <span>Idea</span>
+            </a>
+          </div>
+          <p class="header_text">このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+          <h1>Zenn の執筆方法は 2 種類</h1>
+          <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+          <h2>1. Webエディター</h2>
+          <img class="web_editor main_photo" src="images/web_editor.png" alt="Webエディターの写真" />
+          <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+          <details class="accordion">
+            <summary>ショートカットを使用しよう</summary>
+            <div class="summary_wrap">
+              <p class="text">オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+              <ul>
+                <li>
+                  <span>Ctrl + P（プレビュー）</span>：markdownがどのように表示されるかをチェックできます。
+                  もう一度ショートカットを実行すると、エディターに戻ります。
+                </li>
+                <li><span>Ctrl + S（内容の保存）</span>：変更内容を保存します。</li>
+                <li>
+                  <span>Ctrl + I（埋め込み）</span>：ツイートや YouTube、CodePen、SpeakerDeck
+                  などの埋め込みコンテンツを挿入するためのモーダルが表示されます。
+                </li>
+              </ul>
+              <p class="annotation">※ Mac の場合は<span>Ctrl</span>の代わりに<span>⌘</span>キーを使用します。</p>
+            </div>
+          </details>
+          <h2>ローカルのテキストエディター + CLI</h2>
+          <!-- <div class="main_photo"> -->
+          <img class="main_photo1" src="images/local_editor1.png" alt="ローカルエディターの写真1" />
+          <img class="main_photo2" src="images/local_editor2.png" alt="ローカルエディターの写真2" />
+          <!-- </div> -->
+          <p>
+            自分の好きな環境で執筆したい方は<span class="bold">GitHubリポジトリとの連携機能</span>
+            を利用することをおすすめします。
+            リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。
+          </p>
+          <p class="link_text">📘 <a class="bold" href="#">Zenn と GitHub リポジトリを連携する →</a></p>
+          <p>
+            リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn
+            CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。
+          </p>
+          <p class="link_text">📘 <a class="bold" href="#">Zenn CLI を導入する →</a></p>
+          <hr />
+          <p>
+            オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。
+          </p>
+          <p class="link_text">📘 <a class="bold" href="#">Zenn のmarkdown記法 →</a></p>
+          <a class="github_btn" href="#">
+            <svg style="width: 21px; height: 21px">
+              <use class="github_icon" href="#github_icon" />
+            </svg>
+            <span>GitHubで編集を提案</span>
+          </a>
+          <div class="good_and_SNS">
+            <div class="good">
+              <a href="#">
+                <div class="good_btn">
+                  <svg style="width: 22px; height: 19px">
+                    <use class="good_icon" href="#good_icon" />
+                  </svg>
+                </div>
+              </a>
+              <span>88</span>
+            </div>
+            <div class="SNS_main">
+              <a href="#">
+                <svg style="width: 17px; height: 17px">
+                  <use class="other_icon SNS_icon" href="#other_icon" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg style="width: 24px; height: 24px">
+                  <use class="x_icon SNS_icon" href="#x_icon" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg style="width: 28px; height: 29px">
+                  <use class="facebook_icon SNS_icon" href="#facebook_icon" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg style="width: 27px; height: 27px">
+                  <use class="hatena-blog_icon SNS_icon" href="#hatena-blog_icon" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <aside class="official_info_footer">
+            <img src="images/zenn.jpeg" alt="Zennの公式アカウント" />
+            <div class="wrapper">
+              <p class="title">Zenn公式</p>
+              <p class="text">Zennの使い方や開発状況を発信する公式アカウントです。</p>
+              <div class="follow_items">
+                <a class="follow_btn" href="#">フォロー</a>
+                <a href="#">
+                  <svg style="width: 21px; height: 21px">
+                    <use class="github_icon SNS_icon" href="#github_icon" />
+                  </svg>
+                </a>
+                <svg style="width: 18px; height: 18px">
+                  <use class="x_icon SNS_icon" href="#x_icon" />
+                </svg>
+              </div>
+            </div>
+          </aside>
+        </article>
+        <article class="disucussion_container">
+          <h2>Discussion</h2>
+          <img src="images/discussion.png" alt="ディスカッションしている画像" />
+          <hr />
+          <p>ログインするとコメントできます</p>
+          <a href="#">Login</a>
+        </article>
       </section>
     </main>
   </body>

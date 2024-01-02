@@ -137,8 +137,8 @@ main header h2 {
 }
 
 .good span {
-  font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
-    sans-serif, "Segoe UI Emoji";
+  font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif,
+    "Segoe UI Emoji";
   font-size: 12px;
   line-height: 22px;
   color: #8f9faa;
@@ -187,13 +187,13 @@ main header h2 {
   line-height: 22px;
 }
 
-.follow_btn {
+.follow_items {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.follow_btn a {
+.follow_items .follow_btn {
   font-size: 13px;
   color: #65717b;
   padding: 7px 10px;
@@ -214,8 +214,6 @@ main header h2 {
   color: rgba(0, 0, 0, 0.82);
   background-color: #fff;
   border-radius: 10px;
-  /* test */
-  margin-bottom: 30px;
 }
 
 .outline h2 {
@@ -259,4 +257,281 @@ main header h2 {
   font-weight: 400;
   color: #65717b;
   opacity: 0.5;
+}
+
+/* メイン記事の設定 */
+.main_contents {
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.main_contents {
+  /* prettier-ignore */
+  p, span {
+    line-height: 30px;
+  }
+}
+
+.main_contents .container {
+  grid-column: 3;
+  grid-row: 1;
+  width: 790px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 45px;
+}
+
+.zenn_and_idea {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 13px;
+}
+
+.zenn_and_idea a {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e4edf4;
+  padding: 2px 10px 2px 2px;
+  border-radius: 20px;
+}
+
+.zenn_and_idea img {
+  width: 26px;
+  margin-right: 5px;
+}
+
+.zenn_and_idea span {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.main_contents .container .header_text {
+  margin-bottom: 62px;
+}
+
+.main_contents .container h1 {
+  font-size: 27px;
+  line-height: 41px;
+  padding-bottom: 5.5px;
+  border-bottom: 1px solid #5c93bb2b;
+  margin-bottom: 17.5px;
+}
+
+.main_contents .container h2 {
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #5c93bb2b;
+  margin: 55px 0 17.5px 0;
+}
+
+.web_editor {
+  width: 708px;
+}
+
+.accordion {
+  width: 708px;
+  border: 1px solid #5c93bb30;
+  border-radius: 10px;
+}
+
+.accordion summary {
+  background-color: #f1f5f9;
+  padding: 9.5px;
+  padding-left: 16px;
+  border-bottom: 1px solid #5c93bb30;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.accordion .summary_wrap {
+  font-size: 15px;
+  line-height: 26px;
+  padding: 7.5px 13.5px;
+}
+
+.accordion ul {
+  margin: 7.5px 0;
+}
+
+.accordion ul li {
+  margin: 6px 0 6px 24px;
+}
+
+.accordion ul li::marker {
+  color: #5e6478;
+}
+
+.accordion li span {
+  font-weight: 700;
+}
+
+.accordion .annotation {
+  line-height: 22px;
+  margin: 7px 0;
+}
+
+.accordion .annotation span {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #215aa012;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.main_photo1 {
+  width: 660px;
+  margin-bottom: 30px;
+}
+
+.main_photo2 {
+  width: 710px;
+  position: relative;
+  left: -26px;
+  margin-bottom: 30px;
+}
+
+.main_contents .bold {
+  font-weight: 700;
+}
+
+.main_contents .link_text {
+  margin: 24px 0;
+}
+
+.main_contents .link_text a {
+  color: #0f83fd;
+}
+
+hr {
+  border-top: 1px solid #5c93bb2b;
+  margin: 40px 0;
+}
+
+.github_btn {
+  box-sizing: border-box;
+  width: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 3px;
+  border: 1px solid #d6e3ed;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.good_and_SNS {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e4edf4;
+  margin-bottom: 32px;
+}
+
+.good_and_SNS .good {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.good_and_SNS .good_btn {
+  background-color: #edf2f7;
+  margin-right: 7px;
+}
+
+.good_and_SNS .SNS_main {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.official_info_footer {
+  display: flex;
+}
+
+.official_info_footer img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.official_info_footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.official_info_footer .title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.official_info_footer .text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #65717b;
+}
+
+.official_info_footer .follow_items {
+  gap: 15px;
+}
+
+.official_info_footer .follow_items .follow_btn {
+  padding: 8px 15px;
+}
+
+.official_info_footer .SNS_icon {
+  color: #65717b;
+}
+
+/* ディスカッションの設定 */
+.main_contents .disucussion_container {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 24px 0;
+  margin-bottom: 48px;
+}
+
+.disucussion_container h2 {
+  font-size: 27px;
+  line-height: 41px;
+  margin-bottom: 15px;
+}
+
+.disucussion_container img {
+  width: 300px;
+}
+
+.disucussion_container hr {
+  margin: 33px 0 16px 0;
+}
+
+.disucussion_container p {
+  color: #8f9faa;
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 11px;
+}
+
+.disucussion_container a {
+  background-color: #3ea8ff;
+  font-family: Inter, "system-ui", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #fff;
+  display: inline-block;
+  padding: 7.5px 16.5px;
+  border-radius: 10px;
 }
