@@ -1,0 +1,166 @@
+/* スマートフォンの設定 */
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+}
+
+header {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+header ul li {
+  list-style: none;
+  height: 30px;
+}
+header .selected {
+  background-color: grey;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 12px 10px;
+}
+
+header .not-selected {
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.main_photo {
+  padding-left: 0;
+}
+
+.main_photo img {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 70px;
+}
+
+.contents {
+  text-align: center;
+  padding: 0 4%;
+}
+
+.contents h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+
+.self-introduction {
+  margin-bottom: 70px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.self-introduction .explanation {
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.profile_images {
+  margin-bottom: 70px;
+}
+
+.user_icon img {
+  border-radius: 100px;
+}
+
+.profile_text {
+  margin-bottom: 10px;
+}
+
+.profile_photo img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+footer p {
+  border-bottom: 5px solid #000;
+  padding-bottom: 10px;
+}
+
+/* PCの設定 */
+@media screen and (min-width: 600px) {
+  header {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  header ul {
+    width: 30%;
+  }
+
+  header .selected {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  header .not-selected {
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  header ul {
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  .contents {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .contents p {
+    font-size: 18px;
+  }
+
+  .self-introduction {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .self-introduction .explanation {
+    line-height: 1.5;
+  }
+
+  .self-introduction .title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .profile_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
