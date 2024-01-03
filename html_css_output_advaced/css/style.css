@@ -103,6 +103,8 @@ main header h2 {
   display: grid;
   grid-template-columns: 1fr 80px 3fr 1fr 1fr;
   gap: 30px;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 /* サイドバー（左）の設定 */
@@ -262,9 +264,7 @@ main header h2 {
 /* メイン記事の設定 */
 .main_contents {
   color: rgba(0, 0, 0, 0.82);
-}
 
-.main_contents {
   /* prettier-ignore */
   p, span {
     line-height: 30px;
@@ -275,6 +275,9 @@ main header h2 {
   grid-column: 3;
   grid-row: 1;
   width: 790px;
+}
+
+.main_contents .container .article {
   background-color: #fff;
   border-radius: 10px;
   padding: 40px;
@@ -317,7 +320,7 @@ main header h2 {
   margin-bottom: 17.5px;
 }
 
-.main_contents .container h2 {
+.main_contents .outline_text {
   font-size: 24px;
   line-height: 36px;
   padding-bottom: 7px;
@@ -494,8 +497,6 @@ hr {
 
 /* ディスカッションの設定 */
 .main_contents .disucussion_container {
-  grid-column: 3;
-  grid-row: 2;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
@@ -702,4 +703,10 @@ footer .container {
 .classmethod img {
   width: 115px;
   height: 25px;
+}
+
+@media (width <= 1300px) {
+  .aside_left {
+    display: none;
+  }
 }
