@@ -89,13 +89,13 @@ main header h2 {
   letter-spacing: 0.05em;
 }
 
-.update_date {
+.date .update_date {
   display: flex;
   align-items: center;
   gap: 3px;
 }
 
-.update_date svg {
+.date .update_date svg {
   fill: #65717b;
 }
 
@@ -110,7 +110,7 @@ main header h2 {
   grid-column: 2;
 }
 
-.good {
+.aside_left .good {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -136,7 +136,7 @@ main header h2 {
   stroke-width: 3;
 }
 
-.good span {
+.aside_left .good span {
   font-family: -apple-system, "system-ui", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif,
     "Segoe UI Emoji";
   font-size: 12px;
@@ -534,4 +534,119 @@ hr {
   display: inline-block;
   padding: 7.5px 16.5px;
   border-radius: 10px;
+}
+
+/* Read nextの設定 */
+.read_next_container {
+  width: 880px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.read_next_container h1 {
+  font-family: Inter, "system-ui", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 49px;
+  margin-bottom: 8px;
+}
+
+.read_next_articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.read_next_article {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 20px;
+}
+
+.read_next_article .article_icon {
+  display: block;
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.article_icon span {
+  display: inline-block;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.read_next_article h2 {
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 7px;
+}
+
+.update_info {
+  display: flex;
+  align-items: center;
+}
+
+.update_info img {
+  width: 26px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.update_info .user_name {
+  font-size: 13px;
+  margin-right: 4px;
+  line-height: 19px;
+}
+
+.update_info span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #8f9faa;
+}
+
+.update_info .update_date {
+  color: #65717b;
+  margin-top: 1px;
+  margin-right: 6px;
+  letter-spacing: 0.05rem;
+}
+
+.update_info .good {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.update_info .good svg {
+  fill: transparent;
+  stroke: #8f9faa;
+  stroke-width: 3;
+}
+
+.update_info .users {
+  position: relative;
+  margin-right: 12px;
+}
+
+.update_info .user1 {
+  border-radius: 8px;
+  margin-right: 0;
+}
+
+.update_info .user2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.update_info .flex {
+  display: flex;
 }
