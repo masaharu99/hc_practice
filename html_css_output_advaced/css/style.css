@@ -650,3 +650,56 @@ hr {
 .update_info .flex {
   display: flex;
 }
+
+/* フッターの設定 */
+footer {
+  background-color: #fff;
+}
+
+footer .container {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+  border-bottom: 1px solid #5c93bb2b;
+  margin: 0 auto;
+}
+
+.footer_logo img {
+  width: 85px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.footer_logo p {
+  color: #8f9faa;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.footer_menu {
+  color: rgba(0, 0, 0, 0.82);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_menu h3 {
+  font-family: Inter, "system-ui", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.footer_menu a {
+  display: block;
+  font-size: 14px;
+}
+
+.classmethod {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.classmethod img {
+  width: 115px;
+  height: 25px;
+}
