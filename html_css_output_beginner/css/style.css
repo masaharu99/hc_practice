@@ -6,13 +6,17 @@
 }
 
 header {
-  margin: 10px 0;
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header ul {
+  width: 55%;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-between;
   padding: 0 4%;
 }
 
@@ -20,14 +24,12 @@ header ul li {
   list-style: none;
   height: 30px;
 }
-
 header .selected {
   background-color: grey;
   color: #fff;
   font-size: 18px;
   font-weight: 900;
-  text-align: center;
-  padding: 12px 10px 0 10px;
+  padding: 12px 10px;
 }
 
 header .not-selected {
@@ -110,10 +112,14 @@ footer p {
     margin: 0 auto;
   }
 
+  header ul {
+    width: 30%;
+  }
+
   header .selected {
     font-size: 24px;
     text-align: center;
-    padding: 10px 15px 5px 15px;
+    padding: 10px 15px;
   }
 
   header .not-selected {
@@ -124,7 +130,7 @@ footer p {
   }
 
   header ul {
-    margin: 10px auto;
+    margin: 10px 0;
     justify-content: space-between;
   }
 
