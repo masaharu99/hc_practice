@@ -100,21 +100,12 @@ main header h2 {
 }
 
 .main_contents {
-  /* display: grid;
-  width: 70%;
-  grid-template-columns: 80px 790px 300px;
-  gap: 30px;
-  margin: 0 auto; */
-
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
 /* サイドバー（左）の設定 */
-.aside_left {
-}
-
 .aside_left .good {
   text-align: center;
   margin-bottom: 16px;
@@ -161,9 +152,6 @@ main header h2 {
 }
 
 /* サイドバー（右）の設定 */
-.aside-right {
-}
-
 .official_info {
   box-sizing: border-box;
   width: 300px;
@@ -275,7 +263,8 @@ main header h2 {
 
 .main_contents .container {
   box-sizing: border-box;
-  width: 790px;
+  width: 60%;
+  max-width: 790px;
 }
 
 .main_contents .container .article {
@@ -330,11 +319,13 @@ main header h2 {
 }
 
 .web_editor {
-  width: 708px;
+  width: 99.7%;
+  max-width: 708px;
 }
 
 .accordion {
-  width: 708px;
+  width: 99.7%;
+  max-width: 708px;
   border: 1px solid #5c93bb30;
   border-radius: 10px;
 }
@@ -386,12 +377,14 @@ main header h2 {
 }
 
 .main_photo1 {
-  width: 660px;
+  width: 93%;
+  max-width: 660px;
   margin-bottom: 30px;
 }
 
 .main_photo2 {
-  width: 710px;
+  width: 100%;
+  max-width: 710px;
   position: relative;
   left: -26px;
   margin-bottom: 30px;
@@ -659,9 +652,11 @@ footer {
 }
 
 footer .container {
-  width: 1120px;
-  display: flex;
-  justify-content: space-between;
+  width: 90%;
+  max-width: 1120px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
   padding: 40px 0 40px 0;
   border-bottom: 1px solid #5c93bb2b;
   margin: 0 auto;
@@ -677,6 +672,12 @@ footer .container {
   color: #8f9faa;
   font-size: 13px;
   line-height: 21px;
+}
+
+.footer_menus {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
 }
 
 .footer_menu {
@@ -715,5 +716,27 @@ footer .container {
 @media (width <= 1000px) {
   .aside-right {
     display: none;
+  }
+
+  .main_contents .container {
+    width: 90%;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer_logo {
+    grid-column: 1 / 5;
+  }
+}
+
+@media (width <= 768px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_logo {
+    grid-column: 1 / 3;
   }
 }
