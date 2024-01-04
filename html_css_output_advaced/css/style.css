@@ -533,7 +533,8 @@ hr {
 
 /* Read nextの設定 */
 .read_next_container {
-  width: 880px;
+  width: 90%;
+  max-width: 880px;
   margin: 0 auto;
   padding-bottom: 64px;
   color: rgba(0, 0, 0, 0.82);
@@ -738,5 +739,9 @@ footer .container {
 
   .footer_logo {
     grid-column: 1 / 3;
+  }
+
+  .read_next_articles {
+    grid-template-columns: 1fr;
   }
 }
