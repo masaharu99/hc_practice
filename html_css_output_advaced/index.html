@@ -44,6 +44,10 @@
         <!-- prettier-ignore -->
         <path fill="currentColor" d="M12.74,20.53,3.48,11.35a.75.75,0,0,1,0-1.07L4.71,9.05a.75.75,0,0,1,1.07,0l7.49,7.41,7.49-7.41a.74.74,0,0,1,1.06,0l1.24,1.23a.77.77,0,0,1,0,1.07L13.8,20.53A.74.74,0,0,1,12.74,20.53Z"></path>
       </symbol>
+      <symbol id="outline_icon" viewBox="0 0 27 27">
+        <!-- prettier-ignore -->
+        <path fill="currentColor" d="M12.74,20.53,3.48,11.35a.75.75,0,0,1,0-1.07L4.71,9.05a.75.75,0,0,1,1.07,0l7.49,7.41,7.49-7.41a.74.74,0,0,1,1.06,0l1.24,1.23a.77.77,0,0,1,0,1.07L13.8,20.53A.74.74,0,0,1,12.74,20.53Z"></path>
+      </symbol>
     </svg>
 
     <header>
@@ -56,6 +60,28 @@
             </svg>
           </a>
           <a class="login" href="#">Log in</a>
+        </div>
+      </div>
+      <hr />
+      <div class="hidden_header">
+        <div class="header_official">
+          <a href="#"><img src="images/zenn.jpeg" alt="Zennの公式アカウント" /></a>
+          <a href="#">Zenn公式</a>
+        </div>
+        <div class="hidden_menu">
+          <a class="header_outline" href="#">
+            <span>目次</span>
+            <svg style="width: 13px; height: 13px">
+              <use class="outline_icon" href="#outline_icon" />
+            </svg>
+          </a>
+          <a href="#">
+            <div class="good_btn">
+              <svg style="width: 22px; height: 19px">
+                <use class="good_icon" href="#good_icon" />
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
     </header>
@@ -143,10 +169,8 @@
               </div>
             </details>
             <h2 class="outline_text">ローカルのテキストエディター + CLI</h2>
-            <!-- <div class="main_photo"> -->
             <img class="main_photo1" src="images/local_editor1.png" alt="ローカルエディターの写真1" />
             <img class="main_photo2" src="images/local_editor2.png" alt="ローカルエディターの写真2" />
-            <!-- </div> -->
             <p>
               自分の好きな環境で執筆したい方は<span class="bold">GitHubリポジトリとの連携機能</span>
               を利用することをおすすめします。
@@ -454,9 +478,8 @@
         <div class="container">
           <div class="footer_logo">
             <a href="#"><img src="svg/Zenn_logo.svg" alt="ロゴ" /></a>
-            <p>エンジニアのための<br />情報共有コミュニティ</p>
+            <p>エンジニアのための<br class="br" />情報共有コミュニティ</p>
           </div>
-          <!-- <div class="footer_menus"> -->
           <div class="footer_menu">
             <h3>About</h3>
             <a href="#">Zennについて</a>
@@ -481,7 +504,6 @@
             <a href="#">プライバシーポリシー</a>
             <a href="#">特商法表記</a>
           </div>
-          <!-- </div> -->
         </div>
         <figure class="classmethod">
           <img src="svg/classmethod-logo-small.svg" alt="企業ロゴ" />

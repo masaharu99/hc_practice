@@ -16,7 +16,8 @@ header {
 
 .header_container {
   margin: 15px auto 0 auto;
-  width: 60%;
+  width: 90%;
+  max-width: 1120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +47,52 @@ header .login {
   padding: 10px 18px;
   border: none;
   border-radius: 8px;
+}
+
+header hr {
+  display: none;
+}
+
+.hidden_header {
+  display: none;
+}
+
+.header_official {
+  display: flex;
+  align-items: center;
+}
+
+.header_official img {
+  width: 38px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.header_official a {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.hidden_header .hidden_menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header_outline span {
+  font-size: 15px;
+  color: #65717b;
+}
+
+.outline_icon {
+  color: #8f9faa;
+}
+
+.hidden_header .good_btn {
+  width: 38px;
+  height: 38px;
+  background-color: #edf2f7;
 }
 
 main {
@@ -717,6 +764,21 @@ footer .container {
 @media (width <= 1000px) {
   .aside-right {
     display: none;
+  }
+
+  header hr {
+    display: block;
+    border-top: 1px solid #5c93bb2b;
+    margin: 20px 0 10px 0;
+  }
+
+  .hidden_header {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main_contents .container {
