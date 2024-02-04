@@ -23,29 +23,19 @@ class Calendar
   end
 
   # 月初のDateオブジェクトを取得
-  first_date = if month.nil?
-           Date.new(Date.today.year, Date.today.month, 1)
-         else
-          Date.new(Date.today.year, month, 1)
-         end
+  first_date = Date.new(Date.today.year, month || Date.today.month, 1)
 
   puts "#{first_date.month}月 #{first_date.year}".center(20)
   puts '月 火 水 木 金 土 日'
 
   # 月初の曜日に応じてスペースの数を変更する
   case first_date.wday
-  when 2
-    print ' ' * 2
-  when 3
-    print ' ' * 5
-  when 4
-    print ' ' * 8
-  when 5
-    print ' ' * 11
-  when 6
-    print ' ' * 14
-  when 0
+  in 0
     print ' ' * 17
+  in 1
+  in n unless n == 1
+    space_num =
+    print ' ' * ((first_date.wday - 1) * 3 - 1)
   end
 
   # 月末のDateオブジェクトを取得
