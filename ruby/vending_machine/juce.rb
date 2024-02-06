@@ -1,17 +1,10 @@
 # Juceクラス
 class Juce
+  attr_reader :name
+  attr_reader :price
+
   def initialize(name, price)
     @name = name
     @price = price
-  end
-
-  # ジュース名を取得する
-  def name
-    @name
-  end
-
-  # 値段を取得する
-  def price
-    @price
   end
 end

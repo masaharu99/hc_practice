@@ -1,13 +1,9 @@
 # Suicaクラス
 class Suica
+  attr_reader :charge
+
   def initialize
     @charge = 500
-  end
-
-  # チャージ残高を確認する
-  # @return [Integer] チャージ残高
-  def charge
-    @charge
   end
 
   # チャージする

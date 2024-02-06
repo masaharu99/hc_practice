@@ -77,6 +77,6 @@ class VendingMachine
   # param [Symbol] ジュースの種類
   # return [Hash] ジュースのHash
   def juce_hash(name)
-    @stocks.filter { |stock| stock[:juce].name == name }[0]
+    @stocks.find { |stock| stock[:juce].name == name }
   end
 end
